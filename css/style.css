@@ -1,23 +1,75 @@
-header {
-    background-color: #eaeaea75;
+/* General*/
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body{
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif !important;
 }
 
-nav {
-    padding: 10px;
-    border-bottom: 2px solid lightgray;
-}
-
-nav ul{
-    list-style: none;
-    display: flex;
+/* Card */
+main {
+    background: white;
+    width: fit-content;
+    border-radius: 15px;
+    overflow: hidden;
+    display: grid;
+    justify-items: center;
     gap: 10px;
-    justify-content: space-evenly;
-    font-weight: bold;
-    font-family: sans-serif;
-    padding: 20px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin: -100px 0 0 -150px;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+/* info */
+#info {
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
 }
+#avatar {
+    border-radius: 50px;
+    overflow: hidden;
+    position: absolute;
+    height: 95px;
+    top: 91px;
+    border: solid 4px white;
+}
+#userName {
+    color: hsl(229, 23%, 23%);
+    font-weight: bold;
+}
+#age, #city {
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+#age {
+    padding-left: 5px;
+}
+#city {
+    padding: 10px 0;
+}
+
+#status {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    border-top: 2px solid lightgray;
+}.firstRow {
+    font-weight: bold;
+    color: hsl(229, 23%, 23%);
+}.secondRow {
+    color: hsl(227, 10%, 46%);
+    font-family: monospace;
+    padding: 5px 0;
+}
+
+/* Mobile*/
+
+@media (max-width: 600px) {
+    main {
+        left: 43%;
+    }
+  }
