@@ -48,6 +48,7 @@ main {
 }
 #city {
     padding: 10px 0;
+    font-size: 13px;
 }
 
 #status {
@@ -64,6 +65,7 @@ main {
     color: hsl(227, 10%, 46%);
     font-family: monospace;
     padding: 5px 0;
+    font-size: 10px;
 }
 
 /* Mobile*/
